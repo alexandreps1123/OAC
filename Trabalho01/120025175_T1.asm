@@ -195,7 +195,7 @@ soma_vetor:
 		
 	mv a0, a1
 	
-	li a7, 1	# imprime a msg1
+	li a7, 1	# imprime resultado funcao 1
 	ecall
 		
 	jal x0, exit	# Pula para o endereco da label exit
@@ -401,7 +401,7 @@ tratamento_erro:
 	erro_funcao_3:
 		
 		# Verifica arg cond (a4)
-		addi t1, x0, 15		# t1 = 0+15
+		addi t1, x0, 3		# t1 = 0+3
 		bgt a4, t1, erro	# a4 > t1 : PC = erro ? PC = PC+4
 		
 		addi t1, x0, 0		# t1 = 0 + 0
